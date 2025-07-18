@@ -7,3 +7,5 @@ if response.status_code == 200:
     message = latest_commit['commit']['message']
     print(f"Latest Commit Hash: {sha}")
     print(f"Message: {message}")
+else:
+    print("Failed to fetch commit data:", response.status_code)
